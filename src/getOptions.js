@@ -16,7 +16,7 @@ function getOptions() {
     const readmeTemplatePath = path.join(mainPath, templatePath);
 
     if (readGenOptions.srcFiles && !Array.isArray(readGenOptions.srcFiles)) {
-        const err = new Error('read-gen.srcFiles must be an array');
+        const err = new Error('autogenerate-readme.srcFiles must be an array');
         throw err;
     }
 
