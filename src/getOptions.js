@@ -9,7 +9,7 @@ const getPackageJSON = require('./getPackageJSON');
 function getOptions() {
     const {packageInfo, mainPath} = getPackageJSON({startPath: process.cwd()});
 
-    const readGenOptions = packageInfo['read-gen'] || {};
+    const readGenOptions = packageInfo['autogenerate-readme'] || {};
 
     const templatePath = readGenOptions.template || './docs/README.md.hbs';
 

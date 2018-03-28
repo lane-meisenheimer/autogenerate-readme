@@ -12,7 +12,7 @@
   "scripts": {
     "docs": "./src/generateReadme.js"
   },
-  "read-gen": {
+  "autogenerate-readme": {
     "srcFiles": [
       "./src/**/*.js"
     ],

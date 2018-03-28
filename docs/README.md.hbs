@@ -25,7 +25,7 @@ each option with its default values is shown in the example package.json below:
 ```javascript
 {
     "name": "example project"
-        "read-gen": {
+        "autogenerate-readme": {
         "srcFiles": ["./src/**/*.js"],
         "template": "./docs/README.md.hbs"
     }
