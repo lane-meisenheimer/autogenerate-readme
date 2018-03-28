@@ -1,0 +1,32 @@
+{
+  "name": "read-gen",
+  "author": {
+    "name": "Lane Meisenheimer",
+    "url": "https://github.com/lane-meisenheimer"
+  },
+  "license": "MIT",
+  "version": "1.0.0",
+  "bin": {
+    "gen-docs": "./src/generateReadme.js"
+  },
+  "scripts": {
+    "docs": "./src/generateReadme.js"
+  },
+  "read-gen": {
+    "srcFiles": [
+      "./src/**/*.js"
+    ],
+    "template": "./docs/Readme.md.hbs"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.1",
+    "@types/jest": "^22.2.2",
+    "jest": "^22.4.3"
+  },
+  "dependencies": {
+    "dmd-bitbucket": "^0.1.10",
+    "fs-extra": "^5.0.0",
+    "handlebars": "^4.0.11",
+    "jsdoc-to-markdown": "^4.0.1"
+  }
+}
