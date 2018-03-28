@@ -4,8 +4,9 @@
     "name": "Lane Meisenheimer",
     "url": "https://github.com/lane-meisenheimer"
   },
+  "repository": "https://github.com/lane-meisenheimer/autogenerate-readme",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "bin": {
     "gen-docs": "./src/generateReadme.js"
   },
