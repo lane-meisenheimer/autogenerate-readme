@@ -25,13 +25,25 @@ each option with its default values is shown in the example package.json below:
 ```javascript
 {
     "name": "example project"
-        "autogenerate-readme": {
+    "autogenerate-readme": {
         "srcFiles": ["./src/**/*.js"],
         "template": "./docs/README.md.hbs"
     }
 }
 ```
 #### Note: All paths should be relative to the package.json file. ####
+
+### Generating Bitbucket Style output
+Bitbucket uses the **safe** version of markdown which does not allow html tags.  To generate your project in this style
+add the following to your package.json
+```javascript
+{
+    "name": "example project"
+    "autogenerate-readme": {
+        "use-bitbucket": true
+    }
+}
+```
 
 ## Running ##
 ### Warning: Running the generation will overwrite any existing README.md file. ###

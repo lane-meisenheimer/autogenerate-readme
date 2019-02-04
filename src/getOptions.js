@@ -21,11 +21,17 @@ function getOptions() {
     }
 
     const srcFiles = (readGenOptions.srcFiles || ['./src/**/*.js']).map(localPath => path.join(mainPath, localPath));
+    const plugin = [];
+
+    if(readGenOptions['use-bitbucket']) {
+        plugin.push('dmd-bitbucket');
+    }
 
     return {
         srcFiles,
         readmeTemplatePath,
-        mainPath
+        mainPath,
+        plugin
     };
 }
 

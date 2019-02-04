@@ -9,12 +9,12 @@ const writeReadmeFile      = require('./writeReadmeFile');
  * @returns {Promise<void>}
  */
 async function generateReadme() {
-    const {srcFiles, readmeTemplatePath, mainPath} = getOptions();
+    const {srcFiles, readmeTemplatePath, mainPath, plugin} = getOptions();
 
     const readmeTemplate = await createReadmeTemplate(readmeTemplatePath);
     const apiDocs        = await jsdoc2md.render({
         files: srcFiles,
-        plugin: ['dmd-bitbucket']
+        plugin
     });
 
     await writeReadmeFile({
